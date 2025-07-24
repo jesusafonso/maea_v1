@@ -1,0 +1,137 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* Garantir que o html também tenha altura total */
+html {
+  height: 100%;
+}
+
+/* Animações para o Slider */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay2 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  70% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDelay3 {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  85% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-fade-in-delay {
+  animation: fadeInDelay 1.5s ease-out;
+}
+
+.animate-fade-in-delay-2 {
+  animation: fadeInDelay2 2s ease-out;
+}
+
+.animate-fade-in-delay-3 {
+  animation: fadeInDelay3 2.5s ease-out;
+}
+
+/* Barra de rolagem personalizada para modal de orçamento */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 8px;
+  background: #e5e7eb;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #38a169;
+  border-radius: 8px;
+}
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #38a169 #e5e7eb;
+}
+
+.text-xs {
+  font-size: 0.65rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 768px) {
+  .md\:mt-40 {
+    margin-top: 3rem !important;
+  }
+}
+
+.mt-48 {
+  margin-top: 0rem;
+}
+
+:root {
+  --maea-blue: #428ecc;
+}
+
+/* Gradiente customizado para azul MAEA */
+.bg-gradient-to-r-from-maea-blue-to-maea-blue {
+  background-image: linear-gradient(to right, var(--maea-blue), var(--maea-blue));
+}
+.text-maea-blue {
+  color: var(--maea-blue) !important;
+}
+.bg-maea-blue {
+  background-color: var(--maea-blue) !important;
+}
+.border-maea-blue {
+  border-color: var(--maea-blue) !important;
+}
+.hover\:bg-maea-blue:hover {
+  background-color: var(--maea-blue) !important;
+}
+.hover\:text-maea-blue:hover {
+  color: var(--maea-blue) !important;
+}
