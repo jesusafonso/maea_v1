@@ -14,37 +14,37 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Garantir que todas as atividades de certificação sejam conduzidas com total imparcialidade, sem influência indevida de interesses internos ou externos.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA reconhece a importância crítica da imparcialidade na prestação de serviços de certificação e compromete-se a preservar, monitorar e demonstrar objetividade em todas as decisões relacionadas à avaliação da conformidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Estrutura e Responsabilidade</strong>
-            <p>A alta direção assegura que nenhum colaborador, auditor, consultor ou parceiro comercial esteja sujeito a pressões financeiras, comerciais ou pessoais que possam comprometer a imparcialidade. Um Comitê de Imparcialidade independente será instituído para revisar riscos potenciais e recomendar medidas de mitigação.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_estrutura_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_estrutura"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Análise e Mitigação de Riscos</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_riscos_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Identificação de riscos à imparcialidade (ex.: envolvimento prévio com clientes)</li>
-              <li>Avaliação do impacto potencial</li>
-              <li>Implementação de controles (ex.: rotatividade de auditores, separação de funções)</li>
-              <li>Registro e revisão periódica das ações tomadas</li>
+              <li>{intl.formatMessage({id: "sobre_imparcialidade_riscos_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_imparcialidade_riscos_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_imparcialidade_riscos_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_imparcialidade_riscos_4"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Conflito de Interesses</strong>
-            <p>A MAEA proíbe a prestação simultânea de serviços de consultoria e certificação ao mesmo cliente, bem como vínculos que possam comprometer a objetividade. Toda relação comercial é avaliada quanto à possibilidade de gerar conflito de interesse.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_conflito_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_conflito"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento Contínuo</strong>
-            <p>O sistema de gestão da qualidade contempla indicadores para avaliar a imparcialidade, com auditorias internas, análise crítica da direção e participação do Comitê de Imparcialidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_monitoramento_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_monitoramento"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Declaração Pública</strong>
-            <p>Todos os colaboradores e partes interessadas têm acesso à presente política, reforçada regularmente por treinamentos, comunicações internas e compromissos éticos formais.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_imparcialidade_declaracao_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_imparcialidade_declaracao"})}</p>
           </div>
         </div>
       )
@@ -56,52 +56,52 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Proteger todas as informações obtidas ou geradas durante os processos de auditoria e certificação, garantindo a confiança dos clientes, partes interessadas e acreditadoras.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_confidencialidade_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Princípios Gerais</strong>
-            <p>A MAEA reconhece que a confidencialidade é um valor central na prestação de serviços de certificação. Todas as informações não públicas devem ser protegidas contra acesso indevido, divulgação não autorizada, uso impróprio ou destruição não intencional.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_principios_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_confidencialidade_principios"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Âmbito</strong>
-            <p>Esta política aplica-se a todos os colaboradores, auditores, revisores, consultores externos, fornecedores, parceiros e qualquer outra parte com acesso a informações sigilosas obtidas no contexto da certificação.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_ambito_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_confidencialidade_ambito"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Acordos de Confidencialidade</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_acordos_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Todos os profissionais vinculados à MAEA devem assinar termos de confidencialidade antes de iniciar suas atividades.</li>
-              <li>Clientes também são informados sobre os limites e proteções de privacidade estabelecidos pela organização.</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_acordos_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_acordos_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Gestão da Informação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_gestao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Os dados dos clientes são armazenados de forma segura, com acesso restrito e controle de permissões.</li>
-              <li>Documentos em papel são arquivados em locais seguros e os digitais em servidores protegidos por criptografia e autenticação.</li>
-              <li>O compartilhamento de informações só ocorrerá mediante autorização explícita do cliente ou obrigação legal documentada.</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_gestao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_gestao_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_gestao_3"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Exceções</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_excecoes_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A confidencialidade pode ser quebrada exclusivamente quando: Exigida por lei ou ordem judicial; Solicitada por órgão acreditador no contexto de supervisão; Autorizada formalmente pelo cliente.</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_excecoes_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Treinamento e Conscientização</strong>
-            <p>A MAEA mantém programas periódicos de capacitação sobre proteção de dados, segurança da informação e boas práticas de confidencialidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_treinamento_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_confidencialidade_treinamento"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento e Melhoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_monitoramento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Auditorias internas avaliam regularmente a aplicação da política, registrando não conformidades e implantando ações corretivas.</li>
-              <li>A política é revisada anualmente ou em caso de mudança legislativa.</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_monitoramento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_confidencialidade_monitoramento_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Declaração Pública</strong>
-            <p>A MAEA torna esta política disponível a todas as partes interessadas, reforçando seu compromisso com a integridade, transparência e respeito às informações dos clientes.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_confidencialidade_declaracao_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_confidencialidade_declaracao"})}</p>
           </div>
         </div>
       )
@@ -113,50 +113,50 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Estabelecer critérios objetivos para garantir que todos os profissionais envolvidos nas atividades de certificação da MAEA possuam, mantenham e demonstrem competências apropriadas, consistentes com os requisitos normativos, técnicos e éticos.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_competencia_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA compromete-se a assegurar que as decisões de certificação sejam realizadas por profissionais qualificados, cuja competência seja validada com base em educação formal, experiência prática, habilidades interpessoais, domínio técnico e conduta ética.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_competencia_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Abrangência</strong>
-            <p>Aplica-se a auditores, revisores, responsáveis técnicos, membros da direção e decisores de certificação que atuem direta ou indiretamente nos processos de avaliação da conformidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_abrangencia_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_competencia_abrangencia"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Recrutamento e Qualificação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_recrutamento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A MAEA define perfis profissionais mínimos para cada função técnica.</li>
-              <li>Os candidatos passam por processo seletivo com avaliação documental, entrevista e verificação de referências.</li>
-              <li>O reconhecimento de competências inclui formação acadêmica, experiência profissional, treinamentos técnicos e domínio de normas de sistemas de gestão.</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_recrutamento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_recrutamento_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_recrutamento_3"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Formação Contínua</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_formacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>São instituídos programas regulares de capacitação, com foco em atualizações normativas, técnicas de auditoria, gestão de riscos e imparcialidade.</li>
-              <li>Cada profissional possui um plano de desenvolvimento individual, alinhado ao escopo de atuação.</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_formacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_formacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Avaliação de Competência</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_avaliacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>As competências são avaliadas por meio de auditorias observadas, análise de relatórios, feedbacks institucionais e revisões anuais.</li>
-              <li>Não conformidades são tratadas por ações corretivas e programas de reforço.</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_avaliacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_avaliacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Manutenção de Registros</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_manutencao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A MAEA mantém registros atualizados de competências, treinamentos, avaliações e autorizações de atuação.</li>
-              <li>Esses registros estão disponíveis para acreditadoras e partes interessadas, conforme exigências legais e contratuais.</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_manutencao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_manutencao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Revisão da Política</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_competencia_revisao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A presente política é revisada anualmente ou sempre que houver alteração normativa significativa ou evidência de necessidade de melhoria. Toda atualização é comunicada à equipe e registrada formalmente.</li>
+              <li>{intl.formatMessage({id: "sobre_competencia_revisao_1"})}</li>
             </ul>
           </div>
         </div>
@@ -169,43 +169,44 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Estabelecer diretrizes claras sobre as responsabilidades atribuídas às funções envolvidas nos processos de auditoria e certificação, garantindo a integridade e a rastreabilidade das decisões tomadas.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_responsabilidade_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Princípios Gerais</strong>
-            <p>A MAEA reconhece que a responsabilidade é um pilar fundamental para a credibilidade de seus processos de certificação. Cada atividade é conduzida por profissionais devidamente autorizados, com funções delimitadas, autonomia técnica e compromisso com a conformidade normativa.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_principios_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_responsabilidade_principios"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Escopo</strong>
-            <p>Esta política aplica-se a todas as pessoas envolvidas em: Avaliação de pedidos de certificação; Planejamento e execução de auditorias; Análise de relatórios e evidências; Tomada de decisão sobre certificações; Gestão e supervisão do sistema de gestão da qualidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_escopo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_responsabilidade_escopo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Atribuição de Responsabilidades</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Auditores: Responsáveis pela coleta e validação de evidências objetivas durante auditorias, respeitando escopo, critérios e prazos estabelecidos.</li>
-              <li>Revisores Técnicos: Avaliam a coerência e suficiência das evidências apresentadas nos relatórios, recomendando aprovação ou ações corretivas.</li>
-              <li>Decisores de Certificação: Emitem a decisão final de certificação com base em documentação técnica e critérios normativos, sem influência comercial ou relacional.</li>
-              <li>Direção da MAEA: Define a política, monitora sua aplicação e assume a responsabilidade geral pela conformidade das operações de certificação.</li>
-              <li>Comitês e Órgãos de Apoio: Assessoram tecnicamente e garantem a imparcialidade e consistência das práticas institucionais.</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_4"})}</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_5"})}</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_atribuicao_6"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Registro e Rastreabilidade</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_registro_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Todas as decisões são registradas em sistemas seguros e auditáveis, permitindo rastreabilidade completa desde a solicitação até a emissão, suspensão ou retirada da certificação.</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_registro_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Responsabilidade Legal e Ética</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_legal_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A MAEA responde civil e institucionalmente pelas certificações emitidas. O descumprimento das responsabilidades estabelecidas pode resultar em ações corretivas internas, sanções contratuais ou encaminhamentos legais.</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_legal_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento e Melhoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_responsabilidade_monitoramento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A política é avaliada periodicamente por meio de auditorias internas, análises críticas da direção e feedbacks dos clientes, visando a melhoria contínua e conformidade com requisitos internacionais de acreditação.</li>
+              <li>{intl.formatMessage({id: "sobre_responsabilidade_monitoramento_1"})}</li>
             </ul>
           </div>
         </div>
@@ -218,54 +219,54 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Promover a clareza, a acessibilidade e a divulgação correta das informações relacionadas aos serviços de certificação oferecidos pela MAEA, reforçando a confiança entre clientes, partes interessadas e organismos acreditadores.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_transparencia_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA assegura que todas as atividades, critérios, procedimentos e decisões ligadas à certificação sejam comunicadas de forma objetiva, rastreável e acessível às partes relevantes, respeitando os princípios da imparcialidade, confidencialidade e legalidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_transparencia_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Âmbito</strong>
-            <p>Aplica-se a: Comunicação de escopos e critérios de certificação; Divulgação de status de certificações válidas, suspensas ou retiradas; Explicação dos processos, prazos, requisitos e direitos dos clientes; Relacionamento com organismos acreditadores e partes reguladoras.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_ambito_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_transparencia_ambito"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Comunicação ao Cliente</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_comunicacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Os clientes recebem orientações claras sobre os requisitos da norma aplicável, o processo de auditoria, critérios de decisão e manutenção da certificação.</li>
-              <li>Todos os documentos oficiais (propostas, contratos, relatórios, certificados) são apresentados de forma transparente e rastreável.</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_comunicacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_comunicacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Publicação Institucional</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_publicacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A MAEA disponibiliza publicamente informações relevantes por meio de seu site, manuais institucionais e comunicados oficiais.</li>
-              <li>A lista de organizações certificadas, com o escopo aplicável e status, será mantida atualizada e acessível.</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_publicacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_publicacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Solicitação de Informações</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_solicitacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>As partes interessadas podem solicitar informações sobre processos e decisões de certificação por meio de canais formais.</li>
-              <li>O atendimento é realizado com responsabilidade, respeitando os limites da confidencialidade.</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_solicitacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_solicitacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Proteção e Equilíbrio</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_protecao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A transparência é exercida sem comprometer a imparcialidade, a confidencialidade e os direitos dos clientes.</li>
-              <li>Casos de restrição de informação por razões legais, contratuais ou regulatórias são registrados e justificadamente documentados.</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_protecao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_protecao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento e Revisão</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_monitoramento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Auditorias internas e análises críticas avaliam a eficácia desta política. Os resultados geram planos de melhoria e são compartilhados com a direção e comitês envolvidos.</li>
+              <li>{intl.formatMessage({id: "sobre_transparencia_monitoramento_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Declaração Pública</strong>
-            <p>Esta política é amplamente divulgada junto aos colaboradores, clientes e partes interessadas, como demonstração do compromisso institucional da MAEA com ética, credibilidade e governança.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_transparencia_declaracao_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_transparencia_declaracao"})}</p>
           </div>
         </div>
       )
@@ -277,66 +278,66 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Estabelecer diretrizes claras para o recebimento, registro, análise, decisão e acompanhamento de reclamações e apelações relacionadas às atividades de certificação da MAEA, assegurando justiça, imparcialidade e rastreabilidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_reclamacoes_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Definições</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_definicoes_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Reclamação: Manifestação de insatisfação de qualquer parte interessada em relação aos serviços, decisões ou conduta da MAEA.</li>
-              <li>Apelação: Solicitação formal de revisão de decisão de certificação feita por um cliente.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_definicoes_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_definicoes_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA assegura que todas as reclamações e apelações sejam tratadas com ética, imparcialidade e tempestividade, sem retaliações ou impactos negativos às partes envolvidas.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_reclamacoes_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Recepção e Registro</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_recepcao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Reclamações e apelações podem ser enviadas por e-mail, formulário eletrônico ou presencialmente.</li>
-              <li>Todas as manifestações são registradas no sistema de gestão da qualidade, com número de protocolo, data e responsável pelo tratamento.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_recepcao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_recepcao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Avaliação e Investigação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_avaliacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Um responsável designado conduz análise objetiva, baseada em evidências, respeitando o princípio da imparcialidade.</li>
-              <li>O processo inclui revisão documental, entrevistas, e, se necessário, auditoria extraordinária.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_avaliacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_avaliacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Decisão e Resposta</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_decisao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>As decisões sobre reclamações e apelações são realizadas por pessoal não envolvido diretamente no assunto.</li>
-              <li>A resposta formal inclui a decisão, fundamentação técnica e, se aplicável, medidas corretivas ou preventivas.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_decisao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_decisao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Prazo</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_prazo_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>As reclamações são respondidas em até 15 dias úteis.</li>
-              <li>Apelações seguem prazo de 30 dias úteis, respeitando etapas de análise, deliberação e comunicação.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_prazo_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_prazo_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento e Melhoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_monitoramento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Todas as reclamações e apelações são analisadas periodicamente pela direção e pelo Comitê de Imparcialidade.</li>
-              <li>Tendências e reincidências são utilizadas como indicadores para melhoria contínua dos processos e formação da equipe.</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_monitoramento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_reclamacoes_monitoramento_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Confidencialidade</strong>
-            <p>O tratamento das manifestações respeita o sigilo das informações, garantindo proteção às partes envolvidas e registro seguro da documentação.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_confidencialidade_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_reclamacoes_confidencialidade"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Divulgação</strong>
-            <p>Esta política é publicada institucionalmente e divulgada aos clientes no momento da contratação e renovação, além de estar disponível em canais oficiais.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_divulgacao_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_reclamacoes_divulgacao"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Revisão</strong>
-            <p>A política é revisada anualmente ou sempre que necessário, mediante sugestão das partes interessadas, mudanças normativas ou não conformidades registradas.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_reclamacoes_revisao_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_reclamacoes_revisao"})}</p>
           </div>
         </div>
       )
@@ -348,65 +349,65 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Estabelecer princípios e diretrizes para a realização de auditorias e emissão de certificações, assegurando a conformidade com requisitos normativos, técnicos e éticos aplicáveis.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_auditoria_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA compromete-se a realizar auditorias de forma sistemática, competente e imparcial, com base em evidências objetivas e critérios públicos. As decisões de certificação seguem processos estruturados e independentes, conforme os requisitos da ISO/IEC 17021-1.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_auditoria_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Escopo</strong>
-            <p>Aplica-se a: Auditorias iniciais, de manutenção, extraordinárias e de recertificação; Emissão, suspensão, retirada ou renovação de certificados; Gestão do uso da marca de certificação e símbolos associados.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_escopo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_auditoria_escopo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Planejamento da Auditoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_planejamento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>As auditorias são planejadas com base no escopo do cliente, natureza das atividades, riscos identificados e histórico de conformidade.</li>
-              <li>Cada plano inclui objetivos, critérios, metodologia, equipe auditora designada e cronograma.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_planejamento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_planejamento_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Execução da Auditoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_execucao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Conduzida por auditores competentes, com independência técnica e ética.</li>
-              <li>A coleta de evidências segue métodos definidos: entrevistas, observações, revisão documental e testes operacionais.</li>
-              <li>Toda auditoria é documentada em relatório formal, contendo escopo, não conformidades, observações e conclusões.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_execucao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_execucao_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_execucao_3"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Revisão Técnica</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_revisao_tecnica_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Os relatórios são revisados por pessoal distinto dos auditores, garantindo coerência, suficiência e rastreabilidade das evidências apresentadas.</li>
-              <li>A recomendação técnica é registrada com justificativa documentada.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_revisao_tecnica_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_revisao_tecnica_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Decisão de Certificação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_decisao_certificacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A decisão é tomada por profissionais habilitados e independentes do processo de auditoria.</li>
-              <li>O resultado pode ser: concessão, manutenção, recertificação, suspensão ou retirada da certificação.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_decisao_certificacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_decisao_certificacao_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Controle da Marca de Certificação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_controle_marca_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>O uso da marca, selos e símbolos segue diretrizes formais disponíveis aos clientes.</li>
-              <li>A MAEA monitora ativamente o uso correto e toma ações contra usos indevidos, conforme cláusulas contratuais.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_controle_marca_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_controle_marca_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Acompanhamento e Melhoria</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_acompanhamento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>São realizadas auditorias internas periódicas para validar a eficácia do processo.</li>
-              <li>Indicadores de desempenho, feedback de clientes e análises críticas da direção orientam melhorias constantes.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_acompanhamento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_acompanhamento_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Divulgação e Registro</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_auditoria_divulgacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Os certificados emitidos são registrados em sistema seguro, auditável e disponibilizados mediante solicitação formal.</li>
-              <li>A política é publicada institucionalmente e revisada anualmente ou conforme demanda normativa.</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_divulgacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_auditoria_divulgacao_2"})}</li>
             </ul>
           </div>
         </div>
@@ -419,57 +420,56 @@ export default function Sobre({ compliance }) {
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objetivo</strong>
-            <p>Estabelecer os princípios, responsabilidades e mecanismos para a implementação, operação, monitoramento e melhoria contínua do Sistema de Gestão da Qualidade (SGQ) da MAEA, com base nos requisitos da ISO/IEC 17021-1 e normas complementares.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_objetivo_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_sistema_gestao_objetivo"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso Institucional</strong>
-            <p>A MAEA reconhece que um sistema de gestão estruturado é essencial para garantir credibilidade, consistência e conformidade em suas atividades de certificação. A organização compromete-se a manter um SGQ robusto, auditável, e orientado para resultados e conformidade.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_sistema_gestao_compromisso"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Estrutura do Sistema</strong>
-            <p>O SGQ é composto por: Políticas institucionais formais (imparcialidade, confidencialidade, competência, etc.); Procedimentos operacionais para auditoria, certificação, tratamento de reclamações e gestão documental; Indicadores de desempenho e metas de qualidade; Mecanismos de controle, registro, rastreabilidade e revisão técnica.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_estrutura_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_sistema_gestao_estrutura"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Responsabilidades</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_responsabilidades_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Direção Executiva: Responsável pela definição, aprovação e supervisão do SGQ, incluindo análise crítica e tomada de decisão.</li>
-              <li>Responsável da Qualidade: Coordena implementação, monitoramento, auditorias internas, controle documental e gestão de não conformidades.</li>
-              <li>Colaboradores Técnicos: Devem aplicar os procedimentos e contribuir com sugestões de melhoria e conformidade.</li>
-              <li>Comitês Institucionais: Apoiam a revisão das políticas, análise de riscos e validação das decisões estratégicas.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_responsabilidades_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_responsabilidades_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_responsabilidades_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_responsabilidades_4"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Monitoramento e Avaliação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_monitoramento_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Auditorias internas são realizadas pelo menos uma vez por ciclo anual completo de certificação.</li>
-              <li>São elaborados planos de ação corretiva e preventiva com base em não conformidades, reclamações, falhas de processo e resultados de desempenho.</li>
-              <li>A análise crítica da direção é documentada e revê recursos, resultados, riscos e oportunidades de melhoria.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_monitoramento_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_monitoramento_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Melhoria Contínua</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_melhoria_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>O SGQ é ajustado conforme evolução normativa, tecnológica, expansão de escopo ou retorno de partes interessadas.</li>
-              <li>A cultura de qualidade é disseminada institucionalmente por meio de treinamentos, comunicação interna e participação ativa dos colaboradores.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_melhoria_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_melhoria_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Registro e Controle</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_registro_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Todos os registros associados ao SGQ são mantidos em formato físico e/ou digital, com controle de versão, prazo de retenção, responsável e segurança da informação.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_registro_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Revisão da Política</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_revisao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Esta política é revisada anualmente, ou quando houver necessidade estratégica, regulatória ou técnica identificada por auditoria interna, análise crítica ou sugestão de partes interessadas.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_revisao_1"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Declaração Institucional</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_sistema_gestao_declaracao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>A MAEA declara publicamente seu compromisso com a qualidade, a conformidade e a melhoria contínua como pilares estratégicos de suas operações de certificação.</li>
+              <li>{intl.formatMessage({id: "sobre_sistema_gestao_declaracao_1"})}</li>
             </ul>
           </div>
         </div>
@@ -477,71 +477,71 @@ export default function Sobre({ compliance }) {
     },
     {
       id: "compliance",
-      title: "Política de Compliance",
+      title: intl.formatMessage({id: "sobre_compliance_title"}),
       icon: "fas fa-shield-alt",
       content: (
         <div className="text-blueGray-600 text-base space-y-4">
           <div>
-            <strong className="block text-blueGray-800 mb-1">Compromisso</strong>
-            <p>A MAEA compromete-se a garantir elevados padrões de qualidade em todas as suas operações, para garantir a conformidade, melhoria contínua e segurança dos processos, produtos e serviços.</p>
-            <p>O objectivo da política de compliance é garantir que todas as actividades da empresa MAEA sejam conduzidas de maneira ética, transparente e em conformidade com as leis e regulamentos aplicáveis. Esta política de compliance estabelece as directrizes que todos os colaboradores devem seguir para garantir um ambiente de trabalho ético e seguro, delimitando procedimentos internos para e mecanismos para mitigação.</p>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_compromisso_title"})}</strong>
+            <p>{intl.formatMessage({id: "sobre_compliance_compromisso"})}</p>
+            <p>{intl.formatMessage({id: "sobre_compliance_compromisso_desc"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Objectivos</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_objectivos_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Assegurar que qualquer trabalhador da MAEA tenha conhecimento e respeite, no exercício das suas funções, as Políticas, os Manuais e Normativos em vigor em matéria de Compliance;</li>
-              <li>Assegurar os recursos, meios técnicos e humanos adequados, que permitam que todos os trabalhadores tenham conhecimento da importância da MAEA cumprir todas as obrigações a que está sujeito, da cultura de Compliance e transparência que deve ser transversal em toda empresa;</li>
-              <li>Assegurar que a MAEA se encontre em cumprimento com as exigências legais e regulamentares em vigor e com maior diligência comunicar e resolver as não conformidades que sejam identificadas.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_objectivos_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_objectivos_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_objectivos_3"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Âmbito</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_ambito_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Esta política aplica-se a todos os colaboradores, fornecedores, parceiros e demais partes interessadas da empresa.</li>
-              <li>Compliance: É um conjunto de acções e processos implementados por uma organização para garantir que as suas operações estejam em conformidade com as leis, regulamentos e normas internas.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_ambito_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_ambito_2"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Comité de Compliance</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_comite_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Responsável pela implementação, monitoramento e revisão da política de compliance.</li>
-              <li>Apoia e aconselha o Conselho de Administração na implementação da presente Política e propõe recomendações que visem a melhoria da gestão dos controlos internos associados ao risco de Compliance;</li>
-              <li>Supervisionar e garantir que a função de Compliance exerce as suas responsabilidades de forma efectiva, independente e eficaz;</li>
-              <li>Analisar os relatórios emitidos pela Função de Compliance e avaliar a eficácia da gestão de risco de Compliance, assegurando que os riscos de Compliance sejam controlados.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_comite_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_comite_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_comite_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_comite_4"})}</li>
             </ul>
-            <p>Auditoria Interna: Realiza auditorias periódicas para verificar o cumprimento da política. Analisar os relatórios emitidos pela Função de Compliance e avaliar a eficácia da gestão de risco de Compliance, assegurando que os riscos de Compliance sejam controlados.</p>
+            <p>{intl.formatMessage({id: "sobre_compliance_auditoria_interna"})}</p>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Políticas Antidiscriminação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Promoção da igualdade de oportunidades e ambiente de trabalho inclusivo.</li>
-              <li>Proibição de Suborno: É estritamente proibido oferecer, prometer, dar, solicitar ou aceitar subornos ou qualquer forma de pagamento ilícito.</li>
-              <li>Conformidade com Leis Anticorrupção: Todos os colaboradores devem cumprir as leis anticorrupção locais e internacionais, incluindo a Lei de Prevenção e Combate à Corrupção.</li>
-              <li>Igualdade de Oportunidades: A empresa MAEA promove a igualdade de oportunidades e não tolera discriminação baseada em raça, cor, religião, sexo, orientação sexual, identidade de gênero, nacionalidade, idade ou deficiência, tendo isso como parte dos valores imutáveis da organização.</li>
-              <li>Ambiente de Trabalho Inclusivo: Todos os colaboradores devem contribuir para um ambiente de trabalho inclusivo e respeitoso.</li>
-            </ul>
-          </div>
-          <div>
-            <strong className="block text-blueGray-800 mb-1">Políticas de Protecção de Dados</strong>
-            <ul className="list-disc list-inside ml-4">
-              <li>A MAEA garante que os dados pessoais são acessados apenas por pessoas autorizadas, para assegurar a confidencialidade, e a conformidade com regulamentos de proteção de dados.</li>
-              <li>Procedimentos de Denúncia: Canal seguro e confidencial para relatar violações.</li>
-              <li>A MAEA disponibiliza um canal seguro e confidencial para que os colaboradores possam relatar violações desta política sem prejuízo de retaliações.</li>
-              <li>Proteção contra Retaliação: Qualquer forma de retaliação contra colaboradores que façam denúncias de boa-fé é estritamente proibida.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_4"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_5"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_antidiscriminacao_6"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Treinamento e Divulgação</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_politicas_proteccao_dados_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Programas de capacitação contínua e comunicação da política.</li>
-              <li>A MAEA oferece programas de treinamento contínuo sobre compliance para todos os colaboradores. As formações podem ser genéricas, a serem prestadas a todos os Colaboradores, ou especializadas, isto é, direccionadas a determinado público-alvo de Colaboradores da empresa.</li>
-              <li>Divulgação: Esta política será comunicada e enviada por e-mail a todos os colaboradores e estará disponível no website da empresa.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_proteccao_dados_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_proteccao_dados_2"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_proteccao_dados_3"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_politicas_proteccao_dados_4"})}</li>
             </ul>
           </div>
           <div>
-            <strong className="block text-blueGray-800 mb-1">Consequências e Penalidades</strong>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_treinamento_divulgacao_title"})}</strong>
             <ul className="list-disc list-inside ml-4">
-              <li>Medidas Disciplinares: Violações a esta política podem resultar em medidas disciplinares, incluindo advertências, suspensão ou demissão.</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_treinamento_divulgacao_1"})}</li>
+              <li>{intl.formatMessage({id: "sobre_compliance_treinamento_divulgacao_2"})}</li>
+            </ul>
+          </div>
+          <div>
+            <strong className="block text-blueGray-800 mb-1">{intl.formatMessage({id: "sobre_compliance_consequencias_title"})}</strong>
+            <ul className="list-disc list-inside ml-4">
+              <li>{intl.formatMessage({id: "sobre_compliance_consequencias_1"})}</li>
             </ul>
           </div>
         </div>
@@ -556,10 +556,10 @@ export default function Sobre({ compliance }) {
           <div className="flex flex-wrap">
             <div className="w-full px-4">
               <h3 className="text-3xl font-semibold mb-6 text-blueGray-800" style={{ marginTop: '3rem' }}>
-                Política de Compliance
+                {intl.formatMessage({id: "sobre_compliance_title"})}
               </h3>
               <p className="text-lg leading-relaxed mb-4 text-blueGray-600">
-                Esta é uma página de exemplo para a Política de Compliance. Adicione aqui o conteúdo detalhado sobre as diretrizes, compromissos e práticas de compliance da empresa.
+                {intl.formatMessage({id: "sobre_compliance_desc"})}
               </p>
             </div>
           </div>
@@ -623,11 +623,11 @@ export default function Sobre({ compliance }) {
                     <i className="fas fa-rocket text-blue-600"></i>
                   </div>
                   <h6 className="text-2xl font-extrabold tracking-wide uppercase mb-2 text-blueGray-800 flex flex-col items-center">
-                    Missão
+                    {intl.formatMessage({id: "sobre_missao_title"})}
                     <span className="block w-10 h-1 bg-gradient-to-r from-[steelblue] to-[lightblue] rounded mt-1"></span>
                   </h6>
                   <p className="mt-2 mb-4 text-blueGray-600 text-base">
-                    Oferecer soluções inovadoras e integradas em consultoria e certificação, promovendo a excelência operacional, a sustentabilidade e a conformidade dos nossos clientes, com ética, responsabilidade e foco em resultados duradouros.
+                    {intl.formatMessage({id: "sobre_missao_desc"})}
                   </p>
                 </div>
               </div>
@@ -640,11 +640,11 @@ export default function Sobre({ compliance }) {
                     <i className="fas fa-eye text-purple-600"></i>
                   </div>
                   <h6 className="text-2xl font-extrabold tracking-wide uppercase mb-2 text-blueGray-800 flex flex-col items-center">
-                    Visão
+                    {intl.formatMessage({id: "sobre_visao_title"})}
                     <span className="block w-10 h-1 bg-gradient-to-r from-blue-500 to-blue-200 rounded mt-1"></span>
                   </h6>
                   <p className="mt-2 mb-4 text-blueGray-600 text-base">
-                    Ser reconhecida como referência nacional e internacional em consultoria e certificação, impulsionando o desenvolvimento sustentável, a qualidade e a segurança em todos os setores em que atuamos.
+                    {intl.formatMessage({id: "sobre_visao_desc"})}
                   </p>
                 </div>
               </div>
@@ -657,16 +657,16 @@ export default function Sobre({ compliance }) {
                     <i className="fas fa-heart text-green-600"></i>
                   </div>
                   <h6 className="text-2xl font-extrabold tracking-wide uppercase mb-2 text-blueGray-800 flex flex-col items-center">
-                    Valores
+                    {intl.formatMessage({id: "sobre_valores_title"})}
                     <span className="block w-10 h-1 bg-gradient-to-r from-blue-500 to-blue-200 rounded mt-1"></span>
                   </h6>
                   <ul className="list-disc list-inside text-left max-w-md mx-auto mt-2 text-blueGray-600">
-                    <li>Ética e Transparência em todas as relações</li>
-                    <li>Compromisso com a qualidade e a melhoria contínua</li>
-                    <li>Respeito às pessoas, à diversidade e ao meio ambiente</li>
-                    <li>Inovação e busca constante por soluções eficientes</li>
-                    <li>Responsabilidade social e sustentabilidade</li>
-                    <li>Foco no cliente e nos resultados</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_1"})}</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_2"})}</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_3"})}</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_4"})}</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_5"})}</li>
+                    <li>{intl.formatMessage({id: "sobre_valores_6"})}</li>
                   </ul>
                 </div>
               </div>
@@ -683,10 +683,10 @@ export default function Sobre({ compliance }) {
                 <img src={require("../assets/img/logo.png")} alt="MAEA Solutions" className="w-40 h-40 object-contain" />
               </div>
               <div className="flex-1 p-8 md:p-10 text-center md:text-left">
-                <h3 className="text-4xl font-bold mb-6 text-blue-700">Sobre Nós</h3>
-                <p className="text-lg leading-relaxed mb-4 text-blueGray-700">Conheça a história, missão e valores da MAEA Solutions, uma empresa referência em consultoria e certificação para diversos setores.</p>
-                <p className="text-lg leading-relaxed mb-4 text-blueGray-600">A MAEA Solutions é uma organização multifacetada que fornece soluções em consultoria e certificação para vários setores em Qualidade, Saúde, Segurança e Meio Ambiente, Segurança Alimentar, Segurança da Informação etc. Nossa vasta experiência industrial com fortes exposições nessas áreas tem apoiado muitas organizações em vários países desde 2023.</p>
-                <p className="text-lg leading-relaxed text-blueGray-600">Desde a sua criação, a MAEA Solutions tem sido fundamental na implementação de sistemas de MAEA em diversos estabelecimentos comerciais. E, em um curto espaço de tempo, consolidou-se como um dos principais provedores de serviços em sua categoria.</p>
+                <h3 className="text-4xl font-bold mb-6 text-blue-700">{intl.formatMessage({id: "index_about_title"})}</h3>
+                <p className="text-lg leading-relaxed mb-4 text-blueGray-700">{intl.formatMessage({id: "index_about_desc"})}</p>
+                <p className="text-lg leading-relaxed mb-4 text-blueGray-600">{intl.formatMessage({id: "index_about_institutional"})}</p>
+                <p className="text-lg leading-relaxed text-blueGray-600">{intl.formatMessage({id: "index_about_institutional"})}</p>
               </div>
             </div>
           </div>

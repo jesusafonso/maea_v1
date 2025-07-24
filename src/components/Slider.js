@@ -16,46 +16,46 @@ export default function Slider() {
   const slides = [
     {
       image: f1Image,
-      title: "Consultoria Empresarial",
-      subtitle: "Estratégia, Inovação e Resultados",
-      description: "Soluções personalizadas para impulsionar o crescimento, a eficiência e a competitividade do seu negócio. Diagnóstico, planejamento estratégico, gestão de mudanças e transformação digital.",
-      cta: "Conheça nossas soluções",
+      title: intl.formatMessage({id: "slider_1_title"}),
+      subtitle: intl.formatMessage({id: "slider_1_subtitle"}),
+      description: intl.formatMessage({id: "slider_1_desc"}),
+      cta: intl.formatMessage({id: "slider_1_cta"}),
       ctaLink: "/business-consulting-formacoes#business_consulting",
       icon: "fas fa-briefcase"
     },
     {
       image: f2Image,
-      title: "Certificação ISO",
-      subtitle: "Qualidade, Segurança e Conformidade",
-      description: "Apoio completo para certificação ISO 9001, 14001, 22000, 27001, 45001 e outras. Implementação, auditoria, treinamentos e manutenção de sistemas de gestão.",
-      cta: "Saiba mais sobre certificação",
+      title: intl.formatMessage({id: "slider_2_title"}),
+      subtitle: intl.formatMessage({id: "slider_2_subtitle"}),
+      description: intl.formatMessage({id: "slider_2_desc"}),
+      cta: intl.formatMessage({id: "slider_2_cta"}),
       ctaLink: "/certificacao-iso",
       icon: "fas fa-certificate"
     },
     {
       image: f3Image,
-      title: "Soluções Ambientais",
-      subtitle: "Sustentabilidade e Responsabilidade",
-      description: "Gestão ambiental, licenciamento, auditorias, monitoramento, tratamento de águas residuais e conformidade legal. Consultoria para empresas comprometidas com o futuro.",
-      cta: "Ver soluções ambientais",
+      title: intl.formatMessage({id: "slider_3_title"}),
+      subtitle: intl.formatMessage({id: "slider_3_subtitle"}),
+      description: intl.formatMessage({id: "slider_3_desc"}),
+      cta: intl.formatMessage({id: "slider_3_cta"}),
       ctaLink: "/solucoes-consultoria#gestao_ambiental",
       icon: "fas fa-leaf"
     },
     {
       image: f4Image,
-      title: "Treinamentos Corporativos",
-      subtitle: "Desenvolvimento de Pessoas e Equipes",
-      description: "Capacitação técnica, comportamental e de liderança. Programas in company, workshops, integração, metodologias ágeis e treinamentos online para todos os setores.",
-      cta: "Veja os treinamentos",
+      title: intl.formatMessage({id: "slider_4_title"}),
+      subtitle: intl.formatMessage({id: "slider_4_subtitle"}),
+      description: intl.formatMessage({id: "slider_4_desc"}),
+      cta: intl.formatMessage({id: "slider_4_cta"}),
       ctaLink: "/treinamento",
       icon: "fas fa-chalkboard-teacher"
     },
     {
       image: f5Image,
-      title: "Projetos no Setor Petrolífero",
-      subtitle: "Excelência em Engenharia e Gestão",
-      description: "Experiência em projetos de engenharia, construção, manutenção e operação para a indústria de óleo e gás. Gestão de contratos, riscos, equipes e compliance.",
-      cta: "Conheça nossa atuação",
+      title: intl.formatMessage({id: "slider_5_title"}),
+      subtitle: intl.formatMessage({id: "slider_5_subtitle"}),
+      description: intl.formatMessage({id: "slider_5_desc"}),
+      cta: intl.formatMessage({id: "slider_5_cta"}),
       ctaLink: "/solucoes-consultoria#gestao_projetos",
       icon: "fas fa-hard-hat"
     }

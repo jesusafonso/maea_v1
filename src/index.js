@@ -127,7 +127,7 @@ const App = () => {
         </Switch>
       </BrowserRouter>
       <FloatingButton
-        href={`https://wa.me/244994220022?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`}
+        href={`https://wa.me/244948607248?text=Ol%C3%A1!%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es.`}
         icon={
           <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
             <path d="M16 3C9.373 3 4 8.373 4 15c0 2.385.832 4.584 2.236 6.393L4 29l7.824-2.05C13.41 27.633 14.686 28 16 28c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-1.18 0-2.334-.207-3.424-.615l-.245-.09-4.646 1.217 1.24-4.527-.16-.234C7.23 18.13 6.5 16.6 6.5 15c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5zm5.07-6.29c-.277-.139-1.637-.807-1.89-.899-.253-.093-.437-.139-.62.139-.184.277-.713.899-.874 1.085-.16.185-.32.208-.597.07-.277-.139-1.17-.431-2.23-1.375-.823-.734-1.379-1.64-1.541-1.917-.16-.277-.017-.427.122-.565.126-.125.277-.32.416-.48.139-.16.185-.277.277-.462.093-.185.046-.347-.023-.485-.07-.139-.62-1.497-.85-2.05-.224-.539-.453-.466-.62-.475l-.527-.009c-.17 0-.446.063-.68.277-.232.215-.88.861-.88 2.099 0 1.238.902 2.434 1.028 2.603.126.17 1.775 2.713 4.3 3.697.602.207 1.07.33 1.436.422.603.153 1.153.132 1.588.08.484-.058 1.637-.668 1.87-1.312.232-.645.232-1.197.162-1.312-.07-.115-.253-.185-.53-.324z" />
@@ -137,68 +137,6 @@ const App = () => {
         title="Fale conosco pelo WhatsApp"
         style={{ right: '1.5rem', bottom: '5.7rem' }}
       />
-      <FloatingButton
-        icon={<i className="fas fa-file-signature text-2xl"></i>}
-        bgColor="bg-blue-600 hover:bg-blue-800"
-        title="Solicitar Cotação"
-        className=""
-        style={{ right: '1.5rem', bottom: '1.5rem' }}
-        onClick={e => { e.preventDefault(); setShowCotacaoModal(true); }}
-      />
-      {showCotacaoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
-          <div className="bg-white rounded-2xl shadow-2xl p-8 relative w-full max-w-lg mx-4 overflow-y-auto custom-scrollbar" style={{ maxHeight: '90vh' }}>
-            <div className="sticky top-0 bg-white pb-4 border-b border-white">
-              <button className="absolute top-2 right-2 text-blueGray-400 hover:text-[#5faee3] text-2xl font-bold" onClick={() => setShowCotacaoModal(false)}>&times;</button>
-              <h2 className="text-2xl font-bold mb-4 text-blueGray-800 text-center">{'modal_title'}</h2>
-            </div>
-            <form className="flex flex-col gap-6 w-full" onSubmit={handleCotacaoSubmit}>
-                  <div className="flex items-center bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 text-blueGray-400"><i className="fas fa-user"></i></span>
-                    <input type="text" name="nome" value={formData.nome} onChange={handleCotacaoChange} placeholder={'modal_nome'} className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none" style={{ height: '60px', width: '100%' }} required />
-                  </div>
-                  <div className="flex items-center bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 text-blueGray-400"><i className="fas fa-envelope"></i></span>
-                    <input type="email" name="email" value={formData.email} onChange={handleCotacaoChange} placeholder={'modal_email'} className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none" style={{ height: '60px', width: '100%' }} required />
-                  </div>
-                  <div className="flex items-center bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 text-blueGray-400"><i className="fas fa-phone"></i></span>
-                    <input type="tel" name="telefone" value={formData.telefone} onChange={handleCotacaoChange} placeholder={'modal_telefone'} className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none" style={{ height: '60px', width: '100%' }} />
-                  </div>
-                  <div className="flex items-center bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 text-blueGray-400"><i className="fas fa-briefcase"></i></span>
-                    <select name="servico" value={formData.servico} onChange={handleCotacaoChange} required className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none" style={{ height: '60px', width: '100%' }}>
-                      <option value="" disabled>{'modal_selecione_servico'}</option>
-                      {servicos.map(s => <option key={s} value={s}>{s}</option>)}
-                    </select>
-                  </div>
-                  <div className="flex items-center bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 text-blueGray-400"><i className="fas fa-building"></i></span>
-                    <select name="departamento" value={formData.departamento} onChange={handleCotacaoChange} required className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none" style={{ height: '60px', width: '100%' }}>
-                      <option value="" disabled>{'modal_selecione_departamento'}</option>
-                      {departamentos.map(d => <option key={d} value={d}>{d}</option>)}
-                    </select>
-                  </div>
-                  <div className="flex items-start bg-blueGray-50 rounded-lg shadow-sm border border-white focus-within:ring-2 focus-within:ring-blue-400 w-full">
-                    <span className="pl-3 pt-4 text-blueGray-400"><i className="fas fa-comment-dots"></i></span>
-                    <textarea name="mensagem" value={formData.mensagem} onChange={handleCotacaoChange} placeholder={'modal_mensagem'} className="border-0 px-3 py-4 bg-transparent text-blueGray-700 rounded-lg text-base w-full focus:outline-none resize-none" rows={4} style={{ width: '100%' }}></textarea>
-                  </div>
-                  <div className="relative w-full flex items-start p-4 bg-blueGray-50 rounded-lg border border-white">
-                    <input type="checkbox" id="termos-modal" required className="form-checkbox h-5 w-5 text-blue-600 transition duration-150 ease-in-out mr-3 mt-0.5 flex-shrink-0" />
-                    <label htmlFor="termos-modal" className="text-blueGray-700 text-sm select-none leading-relaxed">
-                      {'modal_termos_1'} <a href="/termos" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">{'modal_termos_link'}</a> {'modal_termos_2'}
-                    </label>
-                  </div>
-                  <div className="flex justify-end w-full">
-                    <button type="submit" className="bg-gradient-to-r from-blue-600 to-blue-400 text-white font-bold uppercase px-12 py-4 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-500 transition-all duration-200 text-lg w-full lg:w-auto transform hover:scale-105">
-                      <i className="fas fa-paper-plane mr-2"></i>
-                      {'modal_enviar'}
-                    </button>
-                  </div>
-                </form>
-          </div>
-        </div>
-      )}
     </IntlProvider>
   );
 };

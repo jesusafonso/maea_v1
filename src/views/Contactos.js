@@ -70,7 +70,7 @@ export default function Contactos() {
             <div className="w-full md:w-4/12 px-4 text-center">
               <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
-                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-[steelblue]">
+                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full" style={{ backgroundColor: 'steelblue' }}>
                     <i className="fas fa-phone"></i>
                   </div>
                   <h6 className="text-xl font-semibold">{intl.formatMessage({id: "contactos_phone_title"})}</h6>
@@ -163,19 +163,7 @@ export default function Contactos() {
                       <span className="font-bold text-[steelblue]">{intl.formatMessage({id: "contactos_hours_closed"})}</span>
                     </div>
                   </div>
-                  <h4 className="text-2xl font-semibold mt-8">
-                    {intl.formatMessage({id: "contactos_social_title"})}
-                  </h4>
-                  <div className="flex mt-4">
-                    {/* Facebook removido */}
-                    <a href="https://www.linkedin.com/company/maea-lda/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:text-[#5faee3] mr-4">
-                      <i className="fab fa-linkedin text-2xl"></i>
-                    </a>
-                    <a href="#" className="text-pink-400 hover:text-[#5faee3] mr-4">
-                      <i className="fab fa-instagram text-2xl"></i>
-                    </a>
-                    {/* Twitter removido */}
-                  </div>
+                  {/* Redes sociais removidas */}
                 </div>
               </div>
             </div>

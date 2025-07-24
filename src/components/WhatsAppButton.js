@@ -1,7 +1,7 @@
 import React from "react";
 
-const phoneNumber = "+244994220022"; // Substitua pelo número desejado
-const message = encodeURIComponent("Olá! Gostaria de mais informações.");
+const phoneNumber = "+244948607248"; // Número Unitel
+const message = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da MAEA SOLUTIONS. Poderia me enviar informações detalhadas e orientações para atendimento? Obrigado!");
 const whatsappUrl = `https://wa.me/${phoneNumber.replace(/\D/g, "")}?text=${message}`;
 
 export default function FloatingButton({

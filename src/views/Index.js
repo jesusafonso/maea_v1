@@ -57,11 +57,11 @@ export default function Index() {
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl p-8 lg:p-12 border border-white">
               <div className="text-center mb-12">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
-                  Nossos Serviços
+                  {intl.formatMessage({id: "index_services_title"})}
                 </h2>
                 <div className="w-24 h-1 bg-gray-400 mx-auto mb-4"></div>
                 <p className="text-xl leading-relaxed text-black/90 max-w-4xl mx-auto">
-                  Oferecemos soluções completas para o desenvolvimento sustentável, segurança, consultoria e capacitação profissional.
+                  {intl.formatMessage({id: "index_services_desc"})}
                 </p>
               </div>
               <div className="grid grid-cols-1 gap-8">
@@ -73,14 +73,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-leaf"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Ambiente</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_ambiente_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                        A degradação ambiental é um problema sério que ameaça a humanidade, por isso é necessário fazer um esforço sério em direção ao desenvolvimento sustentável.
+                        {intl.formatMessage({id: "index_services_ambiente_desc"})}
                       </p>
                       <a href="/solucoes-consultoria#gestao_ambiental" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                     </div>
                   </div>
@@ -92,14 +92,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-briefcase"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Business Consulting</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_business_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                        Consultoria estratégica para impulsionar o crescimento, eficiência e inovação do seu negócio.
+                        {intl.formatMessage({id: "index_services_business_desc"})}
                       </p>
                       <a href="/business-consulting-formacoes#business_consulting" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                     </div>
                   </div>
@@ -113,14 +113,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-chalkboard-teacher"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Formações Profissional</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_training_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                        Capacitação e desenvolvimento profissional para equipes e indivíduos em diversas áreas do mercado.
+                        {intl.formatMessage({id: "index_services_training_desc"})}
                       </p>
                       <a href="/business-consulting-formacoes#formacoes_profissional" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                     </div>
                   </div>
@@ -132,14 +132,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-cogs"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Saúde e Segurança</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_safety_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                          A responsabilidade total do empregador em proteger a saúde e a segurança do funcionário é um fator vital em um mercado competitivo. O MAEA fornece.
+                          {intl.formatMessage({id: "index_services_safety_desc"})}
                       </p>
                       <a href="/solucoes-consultoria#seguranca_trabalho" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                     </div>
                   </div>
@@ -153,14 +153,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-bookmark"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Certificação ISO</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_iso_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                        As organizações e empresas muitas vezes desejam obter a certificação de acordo com os padrões de sistema de gestão da ISO, embora a certificação não seja uma obrigatoriedade.
+                        {intl.formatMessage({id: "index_services_iso_desc"})}
                       </p>
                       <a href="/certificacao-iso" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                     </div>
                   </div>
@@ -172,14 +172,14 @@ export default function Index() {
                       <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                         <i className="fas fa-users"></i>
                       </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">Treinamentos</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_services_treinamentos_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                       <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                          Enriquecendo o conhecimento por meio de Soluções de MAEA. Uma política de treinamento competente é fundamental para todos os estabelecimentos comerciais.
+                          {intl.formatMessage({id: "index_services_treinamentos_desc"})}
                       </p>
                       <a href="/treinamento" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2 mb-2.5" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                         <i className="fas fa-arrow-right"></i>
-                        <span className="text-sm">Ler mais</span>
+                        <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                       </div>
                     </div>
@@ -197,10 +197,10 @@ export default function Index() {
               {/* Header Section */}
               <div className="text-center mb-12">
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-black">
-                  Certificação ISO
+                  {intl.formatMessage({id: "index_iso_title"})}
                 </h2>
                 <p className="text-xl leading-relaxed text-black/90 max-w-4xl mx-auto">
-                  Os padrões internacionais ISO garantem que produtos e serviços sejam seguros, confiáveis e de boa qualidade. Para empresas, são ferramentas estratégicas que reduzem custos, minimizam desperdícios e erros, e aumentam a produtividade.
+                  {intl.formatMessage({id: "index_iso_desc"})}
                 </p>
               </div>
               {/* Cards no formato Nossos Serviços */}
@@ -210,14 +210,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-check-circle"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 9001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_9001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão da Qualidade
+                      {intl.formatMessage({id: "index_iso_9001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 2 */}
@@ -225,14 +225,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-leaf"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 14001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_14001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão Ambiental
+                      {intl.formatMessage({id: "index_iso_14001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 3 */}
@@ -240,14 +240,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-hard-hat"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">OHSAS 18001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_ohsas_18001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão de Segurança
+                      {intl.formatMessage({id: "index_ohsas_18001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 4 */}
@@ -255,14 +255,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-apple-alt"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 22000</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_22000_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão da Segurança Alimentar
+                      {intl.formatMessage({id: "index_iso_22000_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 5 */}
@@ -270,14 +270,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-utensils"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">HACCP</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_haccp_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Análise de Perigos e Pontos Críticos de Controle
+                      {intl.formatMessage({id: "index_haccp_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 6 */}
@@ -285,14 +285,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                         <i className="fas fa-shield-alt"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 27001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_27001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão de Segurança da Informação
+                      {intl.formatMessage({id: "index_iso_27001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 7 - ISO 20000 */}
@@ -300,14 +300,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-network-wired"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 20000</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_20000_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão de Serviços de TI
+                      {intl.formatMessage({id: "index_iso_20000_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 8 - ISO 13485 */}
@@ -315,14 +315,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-stethoscope"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 13485</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_13485_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão da Qualidade de Dispositivos Médicos
+                      {intl.formatMessage({id: "index_iso_13485_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 9 - ISO 29001 */}
@@ -330,14 +330,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-industry"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 29001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_29001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistemas de gestão da qualidade específicos do setor
+                      {intl.formatMessage({id: "index_iso_29001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 10 - ISO 22716 */}
@@ -345,14 +345,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-flask"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 22716</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_22716_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Cosméticos GMP
+                      {intl.formatMessage({id: "index_iso_22716_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 11 - ISO 50001 */}
@@ -360,14 +360,14 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-bolt"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 50001</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_50001_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Sistema de Gestão de Energia
+                      {intl.formatMessage({id: "index_iso_50001_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
                 {/* Card 12 - ISO 10002 */}
@@ -375,25 +375,25 @@ export default function Index() {
                   <div className="flex items-center justify-center w-20 h-20 mb-5 rounded-full bg-white shadow text-blueGray-700 text-4xl">
                     <i className="fas fa-comments"></i>
                     </div>
-                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">ISO 10002</h3>
+                      <h3 className="text-xl font-bold text-blueGray-800 mb-2 uppercase">{intl.formatMessage({id: "index_iso_10002_title"})}</h3>
                       <span className="block w-10 h-1 bg-gradient-to-r-from-maea-blue-to-maea-blue rounded mb-4"></span>
                   <p className="text-blueGray-700 text-sm leading-relaxed mb-4 text-center max-w-xs mx-auto line-clamp-3">
-                      Diretrizes para tratamento de reclamações em organizações
+                      {intl.formatMessage({id: "index_iso_10002_desc"})}
                     </p>
                   <a href="#" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                    <span className="text-sm">Ler mais</span>
+                    <span className="text-sm">{intl.formatMessage({id: "index_read_more"})}</span>
                       </a>
                 </div>
               </div>
               {/* Call to Action */}
               <div className="text-center mt-12 pt-8 border-t border-[steelblue]">
                 <p className="text-black/90 text-lg mb-4">
-                  Transforme sua empresa com certificações ISO de qualidade internacional
+                  {intl.formatMessage({id: "index_iso_cta"})}
                 </p>
                 <a href="/certificacao" className="inline-flex items-center bg-black/20 text-black font-bold py-3 px-8 rounded-xl hover:bg-black/30 transition-all duration-300">
                   <i className="fas fa-certificate mr-2"></i>
-                  Solicitar Certificação
+                  {intl.formatMessage({id: "index_iso_cta_btn"})}
                 </a>
               </div>
             </div>
@@ -407,7 +407,7 @@ export default function Index() {
             {/* Section Header */}
             <div className="text-center mb-12">
               <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-black">
-                Ambiente
+                {intl.formatMessage({id: "index_ambiente_title"})}
               </h2>
               <div className="w-full h-1 bg-[steelblue] mx-auto"></div>
             </div>
@@ -421,13 +421,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-balance-scale"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Avaliação de Impacto Ambiental</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_impacto_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Avaliamos os impactos ambientais de projetos e atividades, garantindo o desenvolvimento sustentável e o cumprimento das exigências legais.
+                    {intl.formatMessage({id: "index_ambiente_impacto_desc"})}
                   </p>
                         <a href="/ambiente/avaliacao-impacto" aria-label="Ler mais sobre Avaliação de Impacto Ambiental" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_impacto_btn"})}</span>
                 </a>
               </div>
                     </div>
@@ -439,13 +439,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-chart-line"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Medição e Monitoramento Ambiental</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_monitoramento_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Realizamos medições e monitoramentos ambientais completos para identificar, controlar e minimizar impactos ao meio ambiente.
+                    {intl.formatMessage({id: "index_ambiente_monitoramento_desc"})}
                   </p>
                         <a href="/ambiente/monitoramento" aria-label="Ler mais sobre Medição e Monitoramento Ambiental" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_monitoramento_btn"})}</span>
                 </a>
               </div>
                     </div>
@@ -459,13 +459,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-search"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Auditorias Ambientais</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_auditorias_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Conduzimos auditorias ambientais para assegurar a conformidade com normas e legislações, promovendo melhorias contínuas nos processos.
+                    {intl.formatMessage({id: "index_ambiente_auditorias_desc"})}
                   </p>
                         <a href="/ambiente/auditorias" aria-label="Ler mais sobre Auditorias Ambientais" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_auditorias_btn"})}</span>
                 </a>
               </div>
                     </div>
@@ -477,13 +477,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-recycle"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Auditoria de Resíduos</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_residuos_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Avaliamos a gestão de resíduos, identificando oportunidades de redução, reaproveitamento e descarte correto, em conformidade com a legislação.
+                    {intl.formatMessage({id: "index_ambiente_residuos_desc"})}
                   </p>
                         <a href="/ambiente/auditoria-residuos" aria-label="Ler mais sobre Auditoria de Resíduos" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_residuos_btn"})}</span>
                 </a>
               </div>
                     </div>
@@ -497,13 +497,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-tint"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Tratamento de águas residuais</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_aguas_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Oferecemos soluções para o tratamento eficiente de águas residuais, reduzindo impactos ambientais e atendendo às normas vigentes.
+                    {intl.formatMessage({id: "index_ambiente_aguas_desc"})}
                   </p>
                         <a href="/ambiente/tratamento-aguas" aria-label="Ler mais sobre Tratamento de águas residuais" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_aguas_btn"})}</span>
                 </a>
               </div>
                     </div>
@@ -515,13 +515,13 @@ export default function Index() {
                         <div className="text-blueGray-700 flex items-center justify-center w-16 h-16 mb-5 shadow-lg rounded-full bg-white text-3xl">
                           <i className="fas fa-gavel"></i>
                 </div>
-                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">Conformidade legal</h3>
+                  <h3 className="text-xl font-bold text-blueGray-800 mb-2 tracking-tight text-center">{intl.formatMessage({id: "index_ambiente_conformidade_title"})}</h3>
                   <p className="text-gray-500 text-base mb-4 leading-relaxed text-center max-w-xs mx-auto line-clamp-3">
-                    Auxiliamos sua empresa a manter-se em conformidade com as leis ambientais, prevenindo riscos e garantindo operações seguras e responsáveis.
+                    {intl.formatMessage({id: "index_ambiente_conformidade_desc"})}
                   </p>
                         <a href="/ambiente/conformidade-legal" aria-label="Ler mais sobre Conformidade legal" className="inline-flex items-center gap-2 rounded bg-gradient-to-r-from-maea-blue-to-maea-blue text-white font-semibold shadow-md hover:from-maea-blue hover:to-maea-blue hover:shadow-lg transition-all duration-300 mt-2" style={{width: '120px', height: '40px', justifyContent: 'center', alignItems: 'center'}}>
                     <i className="fas fa-arrow-right"></i>
-                          <span className="text-sm">Ler mais</span>
+                          <span className="text-sm">{intl.formatMessage({id: "index_ambiente_conformidade_btn"})}</span>
                 </a>
                       </div>
                     </div>
@@ -538,7 +538,7 @@ export default function Index() {
             <div className="bg-white rounded-3xl overflow-hidden shadow-2xl p-8 lg:p-12 border border-white">
             <div className="text-center mb-12">
               <h2 className="text-4xl lg:text-5xl font-bold mb-4 text-black">
-                  Nossos Pontos de Valores
+                  {intl.formatMessage({id: "index_values_points_title"})}
               </h2>
               <div className="w-full h-1 bg-[steelblue] mx-auto"></div>
             </div>
