@@ -679,5 +679,11 @@ export default {
   "consulting_project_management_title": "Gestão de Projetos",
   "consulting_solutions_title": "Soluções de Consultoria",
   "consulting_solutions_desc": "Conheça nossas soluções especializadas para impulsionar a excelência, a conformidade e a sustentabilidade do seu negócio.",
-  "footer_contato": "Fale Conosco"
+  "footer_contato": "Fale Conosco",
+  "index_ambiente_impacto_title": "Avaliação de Impacto Ambiental",
+  "index_ambiente_monitoramento_title": "Medição e Monitoramento Ambiental",
+  "index_ambiente_auditorias_title": "Auditorias Ambientais",
+  "index_ambiente_residuos_title": "Auditoria de Resíduos",
+  "index_ambiente_aguas_title": "Tratamento de Águas Residuais",
+  "index_ambiente_conformidade_title": "Conformidade Legal"
 }; 
