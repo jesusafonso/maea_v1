@@ -21,8 +21,6 @@ import Index from "./views/Index.js";
 import Sobre from "./views/Sobre.js";
 import Contactos from "./views/Contactos.js";
 import JunteSe from "./views/JunteSe";
-import ConstrucaoCivil from "./views/ConstrucaoCivil";
-import Arquitectura from "./views/Arquitectura";
 import CertificacaoISO from "./views/CertificacaoISO.js";
 import SolucoesConsultoria from "./views/SolucoesConsultoria.js";
 import Treinamento from "./views/Treinamento.js";
@@ -112,8 +110,6 @@ const App = () => {
           <Route path="/servicos" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><SolucoesConsultoria /></PublicLayout>} />
           <Route path="/contactos" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><Contactos /></PublicLayout>} />
           <Route path="/junte-se" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><JunteSe /></PublicLayout>} />
-          <Route path="/construcao-civil" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><ConstrucaoCivil /></PublicLayout>} />
-          <Route path="/arquitectura" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><Arquitectura /></PublicLayout>} />
           <Route path="/certificacao-iso" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><CertificacaoISO /></PublicLayout>} />
           <Route path="/solucoes-consultoria" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><SolucoesConsultoria /></PublicLayout>} />
           <Route path="/treinamento" exact render={() => <PublicLayout locale={locale} setLocale={setLocale}><Treinamento /></PublicLayout>} />

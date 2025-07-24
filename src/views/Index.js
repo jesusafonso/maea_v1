@@ -7,11 +7,7 @@ import Footer from "components/Footers/Footer.js";
 import Slider from "components/Slider.js";
 
 // Importar imagem
-import oilgasImage from "assets/img/oilgas.jpeg";
-import trasImage from "assets/img/tras.jpeg";
-import f2Image from "assets/img/f2.jpeg";
-import f3Image from "assets/img/f3.jpeg";
-import visaovaloresImage from "assets/img/visaovalores.png";
+// import visaovaloresImage from "assets/img/visaovalores.png";
 import { useIntl } from "react-intl";
 
 export default function Index() {

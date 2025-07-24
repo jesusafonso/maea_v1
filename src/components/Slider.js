@@ -6,7 +6,7 @@ import f1Image from "../assets/img/Consultoria_empresarial.jpg";
 import f2Image from "../assets/img/Certificacao_ISO.jpg";
 import f3Image from "../assets/img/sustentabilidade_responsabilidade.jpg";
 import f4Image from "../assets/img/Treinamento_corporativos.jpg";
-import f5Image from "../assets/img/Projetos_Setor_Petrolífero.jpg";
+import f5Image from "../assets/img/Projetos_Setor_Petrolifero.jpg";
 
 export default function Slider() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,10 +52,10 @@ export default function Slider() {
     },
     {
       image: f5Image,
-      title: intl.formatMessage({id: "slider_5_title"}),
-      subtitle: intl.formatMessage({id: "slider_5_subtitle"}),
-      description: intl.formatMessage({id: "slider_5_desc"}),
-      cta: intl.formatMessage({id: "slider_5_cta"}),
+      title: intl.formatMessage({id: "slider_5_title", defaultMessage: "Gestão de Projetos no Setor Petrolífero"}),
+      subtitle: intl.formatMessage({id: "slider_5_subtitle", defaultMessage: "Excelência em projetos de Oil & Gas"}),
+      description: intl.formatMessage({id: "slider_5_desc", defaultMessage: "Soluções completas para gestão, execução e consultoria de projetos no setor petrolífero."}),
+      cta: intl.formatMessage({id: "slider_5_cta", defaultMessage: "Saiba mais"}),
       ctaLink: "/solucoes-consultoria#gestao_projetos",
       icon: "fas fa-hard-hat"
     }
