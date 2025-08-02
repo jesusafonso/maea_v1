@@ -19,6 +19,119 @@ export default function Index() {
       {/* <IndexNavbar fixed /> */}
       <Slider />
 
+      {/* Switchback Section */}
+      <section data-component="switchback" data-content-split="6_5" data-component-bg-color="#FFFFFF" style={{'--component-bg-color': '#FFFFFF'}} data-component-bg="light" className="paragraph paragraph--type--switchback paragraph--view-mode--component-layout overflow-hidden lg:overflow-auto split-6-5 group/c bg-gradient-to-br from-gray-50 via-white to-blue-50 px-6 py-20 lg:py-32">
+        <div className="field field--name-field-switchback-items field--type-entity-reference-revisions field--label-hidden container mx-auto flex flex-col gap-20">
+          
+          <div data-item="1" className="paragraph paragraph--type--switchback-item paragraph--view-mode--default flex flex-col lg:flex-row items-center gap-12 scroll-mt-40">
+            <div className="switchback-content flex flex-col gap-8 justify-center lg:w-1/2">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl mb-6 shadow-lg">
+                <i className="fas fa-certificate text-white text-2xl"></i>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">Certificação ISO</h2>
+              <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
+                <p className="text-lg leading-relaxed text-gray-600 mb-6">A MAEA SOLUTION é especializada na implementação completa de sistemas de gestão ISO. Oferecemos consultoria personalizada para certificações ISO 9001, 14001, 22000, 27001, 45001 e outras, garantindo qualidade, conformidade e excelência operacional para o seu negócio.</p>
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <i className="fas fa-check-circle mr-2"></i>
+                    <span>Consultoria Especializada</span>
+                  </div>
+                  <div className="flex items-center text-blue-600 font-semibold">
+                    <i className="fas fa-award mr-2"></i>
+                    <span>Certificações Reconhecidas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="switchback-media flex justify-center lg:w-1/2">
+              <div className="field field--name-field-component-media field--type-entity-reference field--label-hidden field__item">
+                <article className="media media--type-image media--view-mode-switchback-image rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500 w-96 h-72">
+                  <div className="field field--name-field-media-image field--type-image field--label-visually_hidden">
+                    <div className="field__label visually-hidden">Imagem</div>
+                    <div className="field__item">
+                      <img loading="lazy" src="/Certificacao_ISO.jpg" alt="Certificação ISO" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div data-item="2" className="paragraph paragraph--type--switchback-item paragraph--view-mode--default flex flex-col lg:flex-row items-center gap-12 scroll-mt-40">
+            <div className="switchback-content flex flex-col gap-8 justify-center lg:w-1/2">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-2xl mb-6 shadow-lg">
+                <i className="fas fa-leaf text-white text-2xl"></i>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">Consultoria Ambiental</h2>
+              <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
+                <p className="text-lg leading-relaxed text-gray-600 mb-6">Desenvolvemos soluções completas em gestão ambiental, licenciamento, monitoramento e compliance ambiental. Nossa equipe especializada oferece consultoria para empresas comprometidas com a sustentabilidade e responsabilidade ambiental.</p>
+                <div className="flex items-center space-x-4">
+                  <div className="flex items-center text-green-600 font-semibold">
+                    <i className="fas fa-recycle mr-2"></i>
+                    <span>Sustentabilidade</span>
+                  </div>
+                  <div className="flex items-center text-green-600 font-semibold">
+                    <i className="fas fa-shield-alt mr-2"></i>
+                    <span>Compliance Ambiental</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="switchback-media flex justify-center lg:w-1/2">
+              <div className="field field--name-field-component-media field--type-entity-reference field--label-hidden field__item">
+                <article className="media media--type-image media--view-mode-switchback-image rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500 w-96 h-72">
+                  <div className="field field--name-field-media-image field--type-image field--label-visually_hidden">
+                    <div className="field__label visually-hidden">Imagem</div>
+                    <div className="field__item">
+                      <img loading="lazy" src="/sustentabilidade_responsabilidade.jpg" alt="Consultoria Ambiental" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <div data-item="3" className="paragraph paragraph--type--switchback-item paragraph--view-mode--default flex flex-col lg:flex-row items-center gap-12 scroll-mt-40">
+            <div className="switchback-content flex flex-col gap-8 justify-center lg:w-1/2">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-2xl mb-6 shadow-lg">
+                <i className="fas fa-graduation-cap text-white text-2xl"></i>
+              </div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">Treinamentos Corporativos</h2>
+              <div className="prose prose-lg text-gray-700 leading-relaxed max-w-none">
+                <p className="text-lg leading-relaxed text-gray-600 mb-6">Oferecemos programas de capacitação técnica, comportamental e de liderança. Desenvolvemos treinamentos in company, workshops, integração e metodologias ágeis para todos os setores, impulsionando o crescimento das suas equipes.</p>
+                <div className="flex items-center space-x-4 mb-6">
+                  <div className="flex items-center text-purple-600 font-semibold">
+                    <i className="fas fa-users mr-2"></i>
+                    <span>Capacitação Técnica</span>
+                  </div>
+                  <div className="flex items-center text-purple-600 font-semibold">
+                    <i className="fas fa-chart-line mr-2"></i>
+                    <span>Desenvolvimento</span>
+                  </div>
+                </div>
+                <a className="cta-secondary-wysiwyg inline-flex items-center px-6 py-3 bg-gradient-to-r from-purple-600 to-purple-700 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300" href="/treinamento">
+                  <i className="fas fa-arrow-right mr-2"></i>
+                  <strong>Saiba Mais</strong>
+                </a>
+              </div>
+            </div>
+            <div className="switchback-media flex justify-center lg:w-1/2">
+              <div className="field field--name-field-component-media field--type-entity-reference field--label-hidden field__item">
+                <article className="media media--type-image media--view-mode-switchback-image rounded-2xl overflow-hidden shadow-2xl transform hover:scale-105 transition-all duration-500 w-96 h-72">
+                  <div className="field field--name-field-media-image field--type-image field--label-visually_hidden">
+                    <div className="field__label visually-hidden">Imagem</div>
+                    <div className="field__item">
+                      <img loading="lazy" src="/Treinamento_corporativos.jpg" alt="Treinamentos Corporativos" className="w-full h-full object-cover" />
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       {/* Sector Petrolífero Section */}
       <div className="relative py-20 shadow-2xl" style={{backgroundImage: `url(${f2Image})`, backgroundSize: "cover", backgroundPosition: "center center", backgroundRepeat: "no-repeat"}}>
         <div className="absolute inset-0 bg-gradient-to-r from-white/80 via-white/40 to-transparent"></div>
