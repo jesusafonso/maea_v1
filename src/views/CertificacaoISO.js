@@ -330,6 +330,38 @@ export default function CertificacaoISO() {
           </ul>
         </div>
       )
+    },
+    {
+      id: "iso45001",
+      title: intl.formatMessage({ id: "certificacao_iso_45001_title" }),
+      icon: "fas fa-shield-alt",
+      content: (
+        <div className="text-blueGray-600 text-base space-y-4">
+          <p><strong>{intl.formatMessage({ id: "certificacao_iso_45001_highlight" })}</strong></p>
+          <p>{intl.formatMessage({ id: "certificacao_iso_45001_desc1" })}</p>
+          <p>{intl.formatMessage({ id: "certificacao_iso_45001_desc2" })}</p>
+          <p>{intl.formatMessage({ id: "certificacao_iso_45001_desc3" })}</p>
+          <p>{intl.formatMessage({ id: "certificacao_iso_45001_desc4" })}</p>
+          <ul className="list-disc ml-12 space-y-1">
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list1" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list2" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list3" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list4" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list5" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_list6" })}</li>
+          </ul>
+          <h3 className="font-semibold mt-4">{intl.formatMessage({ id: "certificacao_iso_45001_benefits_title" })}</h3>
+          <ul className="list-disc ml-12 space-y-1">
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_benefit1" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_benefit2" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_benefit3" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_benefit4" })}</li>
+            <li>{intl.formatMessage({ id: "certificacao_iso_45001_benefit5" })}</li>
+          </ul>
+          <h3 className="font-semibold mt-4">{intl.formatMessage({ id: "certificacao_iso_45001_why_title" })}</h3>
+          <p>{intl.formatMessage({ id: "certificacao_iso_45001_why_desc" })}</p>
+        </div>
+      )
     }
   ];
 
@@ -355,25 +387,6 @@ export default function CertificacaoISO() {
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-16"
-          style={{ transform: "translateZ(0)" }}
-        >
-          <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              className="text-gray-300 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg>
         </div>
       </div>
       <section className="pb-20 bg-white pt-0">

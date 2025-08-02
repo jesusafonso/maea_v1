@@ -49,14 +49,14 @@ export default function Footer() {
             <div className="flex-1 mb-8 md:mb-0">
               <h6 className="mt-8 text-lg font-semibold mb-4 text-gray-700">{intl.formatMessage({id: "footer_setores_atendidos_title"})}</h6>
               <ul className="space-y-2 text-gray-600 text-sm">
-                <li><Link to="/servicos/saude-seguranca">{intl.formatMessage({id: "footer_saude_seguranca"})}</Link></li>
-                <li><Link to="/servicos/certificacao-iso">{intl.formatMessage({id: "footer_certificacao_iso"})}</Link></li>
-                <li><Link to="/servicos/treinamentos">{intl.formatMessage({id: "footer_treinamentos"})}</Link></li>
-                <li><Link to="/servicos/ambiente">{intl.formatMessage({id: "footer_ambiente"})}</Link></li>
-                <li><Link to="/servicos/business-consulting">{intl.formatMessage({id: "footer_business_consulting"})}</Link></li>
-                <li><Link to="/servicos/formacoes-profissional">{intl.formatMessage({id: "footer_formacoes_profissional"})}</Link></li>
-                  </ul>
-                </div>
+                <li><Link to="/solucoes-consultoria">{intl.formatMessage({id: "footer_saude_seguranca"})}</Link></li>
+                <li><Link to="/certificacao-iso">{intl.formatMessage({id: "footer_certificacao_iso"})}</Link></li>
+                <li><Link to="/treinamento">{intl.formatMessage({id: "footer_treinamentos"})}</Link></li>
+                <li><Link to="/solucoes-consultoria">{intl.formatMessage({id: "footer_ambiente"})}</Link></li>
+                <li><Link to="/business-consulting-formacoes">{intl.formatMessage({id: "footer_business_consulting"})}</Link></li>
+                <li><Link to="/treinamento">{intl.formatMessage({id: "footer_formacoes_profissional"})}</Link></li>
+              </ul>
+            </div>
             {/* Coluna 5 - Suporte e Contato */}
             <div className="flex-1 mb-8 md:mb-0">
               <h6 className="mt-8 text-lg font-semibold mb-4 text-gray-700">{intl.formatMessage({id: "footer_suporte_contato_title"})}</h6>
@@ -65,9 +65,9 @@ export default function Footer() {
                 <li><Link to="/contactos">{intl.formatMessage({id: "footer_solicite_orcamento"})}</Link></li>
                 <li><Link to="/contactos">{intl.formatMessage({id: "footer_perguntas_frequentes"})}</Link></li>
                 <li><Link to="/contactos">{intl.formatMessage({id: "footer_suporte_tecnico"})}</Link></li>
-                <li><Link to="/contactos">{intl.formatMessage({id: "footer_trabalhe_conosco"})}</Link></li>
-                  </ul>
-                </div>
+                <li><Link to="/junte-se">{intl.formatMessage({id: "footer_trabalhe_conosco"})}</Link></li>
+              </ul>
+            </div>
             {/* Coluna 6 - Institucional */}
             <div className="flex-1 mb-8 md:mb-0">
               <h6 className="mt-8 text-lg font-semibold mb-4 text-gray-700">{intl.formatMessage({id: "footer_institucional_title"})}</h6>
@@ -75,8 +75,8 @@ export default function Footer() {
                 <li><Link to="/sobre">{intl.formatMessage({id: "footer_sobre_maea"})}</Link></li>
                 <li><Link to="/sobre">{intl.formatMessage({id: "footer_missao_visao_valores"})}</Link></li>
                 <li><Link to="/sobre/politica-compliance">{intl.formatMessage({id: "footer_politica_compliance"})}</Link></li>
-                <li><Link to="/privacidade">{intl.formatMessage({id: "footer_politica_privacidade"})}</Link></li>
-                <li><Link to="/termos">{intl.formatMessage({id: "footer_termos_uso"})}</Link></li>
+                <li><Link to="/sobre">{intl.formatMessage({id: "footer_politica_privacidade"})}</Link></li>
+                <li><Link to="/sobre">{intl.formatMessage({id: "footer_termos_uso"})}</Link></li>
               </ul>
             </div>
           </div>
@@ -86,8 +86,8 @@ export default function Footer() {
               {intl.formatMessage({id: "footer_copyright"}, {year: new Date().getFullYear(), company: "MAEA Solutions"})}
             </div>
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-2">
-              <Link to="/privacidade" className="hover:underline">{intl.formatMessage({id: "footer_politica_privacidade"})}</Link>
-              <Link to="/termos" className="hover:underline">{intl.formatMessage({id: "footer_termos_uso"})}</Link>
+              <Link to="/sobre" className="hover:underline">{intl.formatMessage({id: "footer_politica_privacidade"})}</Link>
+              <Link to="/sobre" className="hover:underline">{intl.formatMessage({id: "footer_termos_uso"})}</Link>
               <Link to="/contactos" className="hover:underline">{intl.formatMessage({id: "footer_contato"})}</Link>
               <Link to="/sobre" className="hover:underline">{intl.formatMessage({id: "footer_sobre_maea"})}</Link>
             </div>
