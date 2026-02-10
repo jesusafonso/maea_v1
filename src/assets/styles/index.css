@@ -4,9 +4,46 @@
 
 @tailwind utilities;
 
-/* Garantir que o html também tenha altura total */
+/* Base Styles */
 html {
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background: #ffffff;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #0f172a;
+  letter-spacing: -0.5px;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.875rem;
+  line-height: 1.3;
+}
+
+p {
+  color: #475569;
+  line-height: 1.8;
+  font-weight: 400;
 }
 
 /* Animações para o Slider */
@@ -82,32 +119,186 @@ html {
   animation: fadeInDelay3 2.5s ease-out;
 }
 
-/* Barra de rolagem personalizada para modal de orçamento */
-.custom-scrollbar::-webkit-scrollbar {
-  width: 10px;
-  border-radius: 8px;
-  background: #e5e7eb;
-}
-.custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #38a169;
-  border-radius: 8px;
-}
-.custom-scrollbar {
-  scrollbar-width: thin;
-  scrollbar-color: #38a169 #e5e7eb;
-}
-
-/* Estilos profissionais para submenus */
-@keyframes dropdownFadeIn {
+/* Animações Modernas */
+@keyframes slideInUp {
   from {
     opacity: 0;
-    transform: translateY(-10px) scale(0.95);
-    /* filter: blur(2px); */
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
-    /* filter: blur(0); */
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glowEffect {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(30, 64, 175, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(30, 64, 175, 0.4);
+  }
+}
+
+@keyframes floatingAnimation {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Classes de Animação */
+.animate-slide-in-up {
+  animation: slideInUp 0.8s ease-out;
+}
+
+.animate-slide-in-down {
+  animation: slideInDown 0.8s ease-out;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out;
+}
+
+.animate-glow {
+  animation: glowEffect 2s ease-in-out infinite;
+}
+
+.animate-floating {
+  animation: floatingAnimation 3s ease-in-out infinite;
+}
+
+/* Botões Elegantes */
+.btn-primary {
+  @apply px-8 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-lg font-semibold transition-all duration-300 hover:shadow-xl hover:scale-105 active:scale-95;
+}
+
+.btn-secondary {
+  @apply px-8 py-3 bg-white text-blue-600 border-2 border-blue-600 rounded-lg font-semibold transition-all duration-300 hover:bg-blue-50 hover:shadow-lg;
+}
+
+.btn-outline {
+  @apply px-6 py-2 border-2 border-gray-300 text-gray-700 rounded-lg font-medium transition-all duration-300 hover:border-blue-600 hover:text-blue-600;
+}
+
+/* Links Elegantes */
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* Cards Profissionais */
+.card-modern {
+  @apply bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100;
+}
+
+.card-modern:hover {
+  transform: translateY(-8px);
+}
+
+/* Barra de rolagem personalizada */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Animações de submenu */
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-animate {
+  animation: dropdownFadeIn 0.3s ease-out;
+}
+
+/* Efeito de gradiente de fundo */
+.bg-gradient-modern {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Separadores modernos */
+.divider-modern {
+  height: 4px;
+  background: linear-gradient(90deg, transparent, rgb(96, 165, 250), transparent);
+  margin: 3rem 0;
+  border-radius: 2px;
+}
+
+/* Transições suaves */
+.transition-smooth {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Focos e Hovers */
+button:focus,
+a:focus {
+  @apply outline-none ring-2 ring-blue-500 ring-offset-2 rounded;
+}
+
+/* Responsividade de Tipografia */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.875rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
   }
 }
 
@@ -589,4 +780,167 @@ html {
   right: 1.5rem !important;
   z-index: 9999 !important;
   pointer-events: auto !important;
+}
+
+/* Estilos Avançados para Profissionalismo */
+
+/* Backdrop blur para modais e overlays */
+.backdrop-blur-md {
+  backdrop-filter: blur(12px);
+}
+
+/* Shadow e efeitos de elevação */
+.shadow-soft {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07), 0 10px 13px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Gradientes Premium */
+.gradient-premium {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-light {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.gradient-blue {
+  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+}
+
+/* Badges e Etiquetas */
+.badge-modern {
+  @apply inline-flex items-center px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-semibold;
+}
+
+.badge-success {
+  @apply inline-flex items-center px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-semibold;
+}
+
+.badge-warning {
+  @apply inline-flex items-center px-4 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-semibold;
+}
+
+/* Seções com fundo elegante */
+.section-light {
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.section-dark {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Efeito glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.glass-dark {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Efeito de borda de degradê */
+.border-gradient {
+  position: relative;
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), linear-gradient(135deg, #667eea, #764ba2);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Transições suaves para todos os elementos interativos */
+button, a, input, select, textarea {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover states sofisticados */
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+a:hover {
+  color: #1e40af;
+}
+
+/* Focos visuais acessíveis */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+/* Classes para animações de scroll */
+.fade-in-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+/* Efeito de destaque */
+.highlight-effect {
+  position: relative;
+  color: #1e40af;
+  font-weight: 600;
+}
+
+.highlight-effect::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: scaleInX 0.6s ease-out forwards;
+}
+
+@keyframes scaleInX {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* Espaçamento consistente */
+.spacing-xl {
+  padding: 3rem;
+}
+
+.spacing-lg {
+  padding: 2rem;
+}
+
+.spacing-md {
+  padding: 1.5rem;
+}
+
+/* Texto elegante */
+.text-elegant {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* Separadores elegantes */
+.divider-elegant {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #e2e8f0, transparent);
+  margin: 2rem 0;
 }

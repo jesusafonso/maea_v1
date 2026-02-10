@@ -88,7 +88,7 @@ export default function Slider() {
 
   return (
     <div 
-      className="relative h-screen overflow-hidden"
+      className="relative h-screen overflow-hidden bg-slate-900"
       onMouseEnter={pauseSlider}
       onMouseLeave={resumeSlider}
     >

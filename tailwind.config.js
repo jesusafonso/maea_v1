@@ -23,6 +23,13 @@ module.exports = {
       ...colors,
       omfblue: '#07A6E7',
       omfyellow: '#FFD600',
+      primary: '#1e40af',
+      secondary: '#0f172a',
+      accent: '#06b6d4',
+      'dark-navy': '#0f172a',
+      'light-gray': '#f8fafc',
+      'text-dark': '#1e293b',
+      'text-light': '#64748b',
     },
     extend: {
       minHeight: {
